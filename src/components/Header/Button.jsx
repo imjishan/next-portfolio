@@ -15,7 +15,7 @@ const Button = ({ isActive, setIsActive }) => {
         animate={{ top: isActive ? "-100%" : "0" }}
         transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
       >
-        <div className="h-full flex items-center justify-center w-full bg-[#c9fd74]">
+        <div className="h-full flex items-center justify-center w-full bg-[#c9fd74] hover:bg-[#c9fd74]/70">
           <p>MENU</p>
         </div>
         <div className="h-full flex items-center justify-center w-full bg-black text-white absolute top-full">
