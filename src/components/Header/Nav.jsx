@@ -30,13 +30,15 @@ const slideIn = {
   initial: {
     opacity: 0,
     y: 30,
+    x: -20,
   },
   enter: (i) => ({
     opacity: 1,
     y: 0,
+    x: 0,
     transition: {
       duration: 0.5,
-      delay: 0.75 + i * 0.1,
+      delay: 1.2 + i * 0.1,
       ease: [0.215, 0.61, 0.355, 1],
     },
   }),
@@ -59,7 +61,7 @@ const Nav = () => {
                 exit="exit"
                 initial="initial"
               >
-                <Link href={link.href} className="text-black text-4xl">
+                <Link href={link.href} className="text-black text-3xl">
                   {link.title}
                 </Link>
               </motion.div>
@@ -72,7 +74,7 @@ const Nav = () => {
           return (
             <motion.a
               key={`f_${i}`}
-              className="w-1/2 text-black no-underline text-sm"
+              className="w-1/2 text-black no-underline text-[14px]"
               href={link.href}
               variants={slideIn}
               custom={i}

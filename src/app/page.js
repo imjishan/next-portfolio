@@ -1,4 +1,6 @@
+import WebsitesBranding from "@/components/WebsiteBranding/WebsitesBranding";
+
 const Page = () => {
-  return <div>page</div>;
+  return <WebsitesBranding />;
 };
 export default Page;
