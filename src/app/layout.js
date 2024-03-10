@@ -17,8 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
-        {children}
+        <main className="container mx-auto mt-8">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -49,8 +49,22 @@ const slideIn = {
 };
 const Nav = () => {
   return (
-    <div className="h-full pt-20 pr-10 pb-12 pl-8 box-border flex flex-col justify-between">
-      <div className="flex gap-2 flex-col">
+    <div
+      className="h-full
+    pt-20
+    pr-10
+    pb-12
+    pl-8
+    box-border
+    flex
+    flex-col
+    justify-between"
+    >
+      <div
+        className="flex
+      gap-2
+      flex-col"
+      >
         {Links.map((link, index) => {
           return (
             <div key={index} className="">
@@ -61,7 +75,11 @@ const Nav = () => {
                 exit="exit"
                 initial="initial"
               >
-                <Link href={link.href} className="text-black text-3xl">
+                <Link
+                  href={link.href}
+                  className="text-black
+                text-3xl"
+                >
                   {link.title}
                 </Link>
               </motion.div>
@@ -69,12 +87,19 @@ const Nav = () => {
           );
         })}
       </div>
-      <div className="flex flex-wrap">
+      <div
+        className="flex
+      flex-wrap"
+      >
         {Footerlinks.map((link, i) => {
           return (
             <motion.a
               key={`f_${i}`}
-              className="w-1/2 text-black no-underline text-[14px]"
+              className="w-1/2
+              text-black
+              no-underline
+              text-[14px]"
+              // classname finished
               href={link.href}
               variants={slideIn}
               custom={i}

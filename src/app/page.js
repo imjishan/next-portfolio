@@ -1,6 +1,6 @@
-import WebsitesBranding from "@/components/WebsiteBranding/WebsitesBranding";
+import HeroPage from "@/components/HeroPage/HeroPage";
 
 const Page = () => {
-  return <WebsitesBranding />;
+  return <HeroPage />;
 };
 export default Page;
