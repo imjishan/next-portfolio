@@ -101,6 +101,7 @@ const Nav = () => {
               text-[14px]"
               // classname finished
               href={link.href}
+              target="_blank"
               variants={slideIn}
               custom={i}
               animate="enter"

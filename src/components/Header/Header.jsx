@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "@/components/Header/Button";
 import { motion } from "framer-motion";
 import Nav from "./Nav";
@@ -24,18 +24,38 @@ const Header = () => {
   };
 
   const [isActive, setIsActive] = useState(false);
+  // remove the below code if it does not work
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isActive &&
+        !event.target.closest(".menu-box") &&
+        !event.target.closest(".hamburger")
+      ) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isActive]);
+
   return (
     <div
       className="fixed
-    right-8
-    top-8"
+      right-8
+      top-8"
     >
       <motion.div
         className="w-[350px]
-        h-[520px]
-        bg-[#c9fd74]
-        rounded-3xl
-        relative"
+          h-[520px]
+          bg-[#c9fd74]
+          rounded-3xl
+          relative"
         variants={variants}
         animate={isActive ? "open" : "closed"}
         initial="closed"

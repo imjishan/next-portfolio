@@ -1,13 +1,13 @@
 export const Links = [
-  { title: "Projects", href: "/" },
-  { title: "About", href: "/" },
-  { title: "Projects", href: "/" },
-  { title: "Expertise", href: "/" },
-  { title: "Blog", href: "/" },
+  { title: "Home", href: "/" },
+  { title: "Projects", href: "/projects" },
+  { title: "About", href: "/about" },
+  { title: "Expertise", href: "/expertise" },
+  { title: "Contact", href: "/contact" },
 ];
 export const Footerlinks = [
-  { title: "Github", href: "/" },
-  { title: "LinkedIn", href: "/" },
-  { title: "Twitter", href: "/" },
-  { title: "Instagram", href: "/" },
+  { title: "Github", href: "https://github.com/imjishan" },
+  { title: "LinkedIn", href: "https://linkedin.com/in/jishanahmed11" },
+  { title: "Twitter", href: "https://x.com/JishanCodes" },
+  { title: "Instagram", href: "https://instagram.com/jishan.dv" },
 ];
