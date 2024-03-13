@@ -1,6 +1,4 @@
 import { MdOutlineHorizontalRule } from "react-icons/md";
-import AvatarCom from "./Avatar";
-import { ArrowRightSquare, MailIcon } from "lucide-react";
 const HeroPage = () => {
   return (
     <>
@@ -10,9 +8,6 @@ const HeroPage = () => {
         </div>{" "}
         A full-stack web developer, Crafting Effective web Solutions.
       </div>
-      {/* <div className="flex items-center text-[16px] gap-1 mt-6 pt-2 pb-2 bg-black text-white pl-2">
-        Let's turn digital product dream into reality <MailIcon />
-      </div> */}
     </>
   );
 };
