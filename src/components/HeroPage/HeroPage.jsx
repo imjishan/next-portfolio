@@ -1,3 +1,5 @@
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 const HeroPage = () => {
   return (
@@ -8,6 +10,19 @@ const HeroPage = () => {
         </div>{" "}
         A full-stack web developer, Crafting Effective web Solutions.
       </div>
+      <br />
+      <br />
+      <br />
+      <div className="w-auto h-auto">
+        <Image
+          src={"/project1.jpg"}
+          alt="image of project"
+          width={1000}
+          height={350}
+          className="mx-auto" // Add this class to center the image
+        />
+      </div>
+      <Button>Jishan</Button>
     </>
   );
 };
