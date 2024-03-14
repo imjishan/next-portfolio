@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <Providers>
           <main className="container mx-auto mt-8">
-            <Header />
+            <div className="absolute z-50">
+              <Header />
+            </div>
             <AvatarCom />
             {children}
           </main>
