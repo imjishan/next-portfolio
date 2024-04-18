@@ -1,8 +1,8 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
-import AvatarCom from "@/components/HeroPage/Avatar";
 import { Providers } from "./providers";
+import AvatarIcon from "@/components/Avatar/AvatarIcon";
 
 const roboto = Roboto({
   weight: "400",
@@ -18,13 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} container mx-auto mt-8`}>
         <Providers>
-          <main className="container mx-auto mt-8">
-            <div className="absolute z-50">
+          <main>
+            <div className="z-20">
               <Header />
+              <AvatarIcon />
             </div>
-            <AvatarCom />
             {children}
           </main>
         </Providers>

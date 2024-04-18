@@ -1,6 +1,8 @@
-import HeroPage from "@/components/HeroPage/HeroPage";
-
-const Page = () => {
-  return <HeroPage />;
+const page = () => {
+  return (
+    <>
+      <div>home</div>
+    </>
+  );
 };
-export default Page;
+export default page;
