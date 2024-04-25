@@ -1,11 +1,10 @@
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
-import { Providers } from "./providers";
 import AvatarIcon from "@/components/Avatar/AvatarIcon";
 import SmoothScrolling from "@/components/SmoothScrolling";
 
-const roboto = Inter({
+const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
