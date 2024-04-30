@@ -5,7 +5,7 @@ import AvatarIcon from "@/components/Avatar/AvatarIcon";
 import SmoothScrolling from "@/components/SmoothScrolling";
 
 const roboto = Roboto({
-  weight: "400",
+  weight: "500",
   subsets: ["latin"],
 });
 
